@@ -137,6 +137,15 @@ Figma Design Link:
 (https://www.figma.com/design/5taT2q8AHdeYHWxTAPCj3R/Untitled?node-id=0-1&t=ZqvQPug9TjDNTwTs-1)
 
 ---
+## LPI Tools Referenced
+
+This project explicitly uses the following LPI tools:
+
+- smile_overview
+- get_insights
+- query_knowledge
+
+These tools are referenced in agent.py and used for generating insights.
 
 ## Future Improvements
 
