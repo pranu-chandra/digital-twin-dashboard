@@ -1,2 +1,2 @@
-=== Digital Twin Insight ===
-Low sleep detected. This may reduce your energy levels.
+=== Digital Twin Output ===
+Recommendation: Improve sleep. Reason: Low sleep leads to reduced energy levels.
