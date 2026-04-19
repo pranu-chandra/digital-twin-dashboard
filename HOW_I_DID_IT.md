@@ -1,15 +1,11 @@
-I designed a personal digital twin dashboard focused on health and productivity. I used the SMILE methodology as a conceptual base for structuring the UI.
+I designed a personal digital twin dashboard to track health and productivity metrics such as sleep, activity, and stress.
 
-I referred to the LPI tools:
-- smile_overview to understand the lifecycle and phases
-- get_insights to understand how actionable recommendations are generated
+I also implemented a simple agent (agent.py) that processes inputs and generates insights.
 
-Based on this, I included sections like health stats, habits, insights, and recommendations so that the system goes beyond displaying data and supports decision-making.
+The agent uses LPI tools such as smile_overview and get_insights to understand system structure and generate recommendations.
 
-If a user asks "why this recommendation?", the system explains that it is based on observed patterns such as low sleep leading to reduced focus. This ensures transparency and explainability.
+If a user asks "why this recommendation?", the system explains that it is based on observed patterns such as low sleep leading to reduced energy.
 
-The hardest part was avoiding a cluttered design. Initially, I added too many metrics which made the UI confusing. I simplified it to focus on clarity and usability.
+The main challenge was connecting design thinking with implementation. Initially, I only focused on UI, but later I added a basic agent to demonstrate system behavior.
 
-I also chose to include insights and recommendations even though they were not explicitly required. If I improve this further, I would make it interactive and connect it with real data.
-
-repo link: https://github.com/pranu-chandra/digital-twin-dashboard/tree/main
+If I improve this further, I would connect real-time data and make the system interactive.
