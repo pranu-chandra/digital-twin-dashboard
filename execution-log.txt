@@ -5,4 +5,7 @@ Response received successfully
 Executing tool: get_insights
 Response received successfully
 
+Executing tool: query_knowledge
+Response received successfully
+
 Final insight generated
