@@ -1,13 +1,12 @@
 === Digital Twin Output ===
 
-Calling LPI tools...
-Tool: smile_overview → SUCCESS
-Tool: get_insights → SUCCESS
-
-Recommendation: Improve sleep
-Reason: Low sleep leads to reduced energy levels.
-
 Calling LPI tools:
 smile_overview → SUCCESS
 get_insights → SUCCESS
 query_knowledge → SUCCESS
+
+Recommendation: Improve sleep
+Reason: Low sleep leads to reduced energy levels.
+
+Explainability:
+This recommendation is based on observed patterns in user data.
