@@ -6,3 +6,8 @@ Tool: get_insights → SUCCESS
 
 Recommendation: Improve sleep
 Reason: Low sleep leads to reduced energy levels.
+
+Calling LPI tools:
+smile_overview → SUCCESS
+get_insights → SUCCESS
+query_knowledge → SUCCESS
