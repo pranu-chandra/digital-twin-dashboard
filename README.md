@@ -1,97 +1,144 @@
 # LifeTwin – Personal Digital Twin Dashboard
 
-This project is a UI/UX design concept for a personal digital twin system built as part of the LifeAtlas LPI Developer Kit (Level 3 – Design & UX Track).
+This project is a Level 3 submission for the LifeAtlas LPI Developer Kit (Design & UX Track).
+
+It represents a UI/UX design and a basic agent implementation for a personal digital twin system that tracks health and productivity metrics and provides actionable insights.
+
+---
 
 ## Features
-- Tracks key personal metrics such as sleep, activity, nutrition, and stress
-- Displays overall health score and daily performance indicators
-- Visualizes trends using charts and graphs
-- Provides insights and actionable recommendations
-- Clean and intuitive dashboard layout for quick understanding
 
-## How it works
-The dashboard represents how a digital twin system could collect and process personal data such as sleep hours, physical activity, and stress levels.
+* Tracks sleep, activity, stress, and overall health
+* Displays trends using charts and visual components
+* Provides AI-like insights based on user data
+* Generates actionable recommendations
+* Clean and intuitive dashboard design for non-technical users
 
-This data is then analyzed to:
-- Identify patterns in user behavior
-- Highlight strengths and weak areas
-- Generate insights
-- Suggest improvements through recommendations
+---
+
+## How it Works
+
+The system simulates a digital twin by:
+
+1. Collecting user inputs such as sleep, energy, and stress
+2. Processing this data using a simple agent
+3. Calling LPI tools to understand patterns
+4. Generating insights and recommendations
+
+---
 
 ## SMILE Methodology (Conceptual)
-This design is inspired by the SMILE framework:
 
-- **Reality Capture** → Collect user data (sleep, steps, stress)
-- **Modeling** → Represent data in structured dashboard form
-- **Simulation** → Analyze trends and possible outcomes
-- **Insights** → Identify patterns from user behavior
-- **Learning** → Improve understanding of habits
-- **Evolution** → Enable continuous personal improvement
+This project is inspired by the SMILE framework:
 
-## LPI Tools (Conceptual Reference)
-The design was guided using concepts from LPI tools:
+* **Reality Capture** → Collect data (sleep, steps, stress)
+* **Modeling** → Represent data in dashboard form
+* **Simulation** → Analyze patterns
+* **Insights** → Generate meaningful observations
+* **Learning** → Improve understanding of habits
+* **Evolution** → Suggest continuous improvement
 
-- `smile_overview` → Understanding the lifecycle structure
-- `get_insights` → Designing insight generation
-- `query_knowledge` → Structuring meaningful outputs
+---
 
-These tools influenced how insights and recommendations are presented in the UI.
+## LPI Tool Usage
 
-## Example Insight
-Input:
-Sleep = 6 hours  
-Stress = High  
-Activity = Low  
+The agent explicitly calls LPI tools:
 
-Output:
-"Your energy levels may drop in the afternoon due to insufficient sleep. Consider improving sleep duration and taking short breaks."
+* `smile_overview` → Understands system structure
+* `get_insights` → Generates insights from patterns
+
+These tools are used inside `agent.py` to simulate how a digital twin system processes data.
+
+---
+
+## Code Implementation
+
+The project includes a simple Python agent (`agent.py`) that:
+
+* Accepts user inputs (sleep, energy, stress)
+* Calls LPI tools using subprocess
+* Processes responses
+* Generates recommendations
+
+### Example Tool Calls
+
+* `smile_overview()`
+* `get_insights()`
+
+---
+
+## Example Execution
+
+### Input:
+
+sleep = 5
+energy = 4
+stress = 7
+
+### Output:
+
+Recommendation: Improve sleep. Reason: Low sleep leads to reduced energy levels.
+
+---
 
 ## Explainability
+
 If a user asks:
+
 **"Why is this recommendation given?"**
 
 The system responds:
-"This recommendation is based on observed patterns where lower sleep duration correlates with reduced energy and productivity. Improving sleep can enhance performance."
+
+"This recommendation is based on observed patterns where lower sleep duration leads to reduced energy and productivity. Improving sleep can enhance performance."
 
 This ensures transparency and trust in the system.
 
-## Design Approach
-- Focused on simplicity and clarity
-- Avoided clutter by limiting unnecessary metrics
-- Used visual hierarchy to highlight important data
-- Designed for non-technical users to understand quickly
+---
 
-## Setup
-This is a design prototype created using Figma.
+## Error Handling
+
+The agent includes basic error handling:
+
+* Handles invalid or missing inputs
+* Uses try/except blocks to prevent crashes
+* Returns meaningful error messages
+
+---
+
+## Design Approach
+
+* Focused on simplicity and clarity
+* Avoided clutter by limiting excessive metrics
+* Used visual hierarchy to highlight key insights
+* Designed for quick understanding by non-technical users
+
+---
+
+## Files Included
+
+* `agent.py` → Basic agent with LPI tool calls
+* `sample-output.txt` → Example output
+* `HOW_I_DID_IT.md` → Explanation of approach
+* `dashboard.png` → UI design
+
+---
+
+## Design Prototype
 
 Figma Design Link:
-https://www.figma.com/design/5taT2q8AHdeYHWxTAPCj3R/Untitled?node-id=0-1&t=ZqvQPug9TjDNTwTs-1
+(Add your Figma link here)
+
+---
 
 ## Future Improvements
-- Add interactive prototype
-- Connect real-time data sources
-- Integrate AI-driven predictions
-- Build a functional backend system
-- 
-## Code Implementation
 
-This project includes a simple agent (`agent.py`) that simulates how a digital twin system processes user inputs and generates insights.
+* Add real-time data integration
+* Build interactive UI prototype
+* Improve AI-based prediction logic
+* Connect with backend services
 
-The agent:
-- Accepts inputs like sleep, energy, and stress
-- Calls LPI tools such as `smile_overview` and `get_insights`
-- Generates insights based on patterns
+---
 
-## Example Run
+## Author
 
-Input:
-sleep = 6, energy = 5, stress = 7
-
-Output:
-"Low sleep detected. This may reduce your energy levels."
-
-## Explainability
-
-If a user asks "Why this recommendation?", the system explains:
-
-"This recommendation is based on observed patterns where lower sleep leads to reduced energy and performance."
+Pranu Chandra
