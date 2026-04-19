@@ -104,6 +104,14 @@ The agent includes basic error handling:
 * Returns meaningful error messages
 
 ---
+## Execution Evidence
+
+The agent connects to the LPI system and calls tools:
+
+- smile_overview
+- get_insights
+
+Execution logs are provided in execution-log.txt.
 
 ## Design Approach
 
