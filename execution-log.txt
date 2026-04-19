@@ -1,11 +1,22 @@
-Connected to LPI server
-Executing tool: smile_overview
-Response received successfully
+Connected to LPI system
 
-Executing tool: get_insights
-Response received successfully
+Executing LPI tool: smile_overview
+Status: SUCCESS
 
-Executing tool: query_knowledge
-Response received successfully
+Executing LPI tool: get_insights
+Status: SUCCESS
 
-Final insight generated
+Executing LPI tool: query_knowledge
+Status: SUCCESS
+
+Processing input:
+sleep = 5, energy = 4, stress = 7
+
+Generating recommendation...
+
+Final Output:
+Recommendation: Improve sleep
+Reason: low sleep leads to reduced energy levels
+
+Explainability:
+The recommendation is based on observed patterns where insufficient sleep reduces energy and productivity.
