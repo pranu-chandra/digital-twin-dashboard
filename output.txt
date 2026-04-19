@@ -6,7 +6,8 @@ get_insights → SUCCESS
 query_knowledge → SUCCESS
 
 Recommendation: Improve sleep
-Reason: Low sleep leads to reduced energy levels.
+Reason: low sleep leads to reduced energy levels
 
 Explainability:
-This recommendation is based on observed patterns in user data.
+The recommendation 'Improve sleep' was generated because low sleep leads to reduced energy levels. 
+This is based on observed patterns in user data where insufficient sleep reduces energy and productivity.
