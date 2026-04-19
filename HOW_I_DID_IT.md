@@ -1,12 +1,24 @@
-I designed a personal digital twin dashboard to track health and productivity metrics such as sleep, activity, and stress.
+## HOW I DID IT
 
-I also implemented a simple agent (agent.py) that processes inputs and generates insights.
+I designed a personal digital twin dashboard to track key aspects of health and productivity such as sleep, energy, and stress.
 
-The agent uses LPI tools such as smile_overview and get_insights to understand system structure and generate recommendations.
+To support the design, I implemented a simple Python-based agent (agent.py) that simulates how a digital twin system processes user data and generates insights.
 
-If a user asks "why this recommendation?", the system explains that it is based on observed patterns such as low sleep leading to reduced energy.
+The agent explicitly uses LPI tools such as:
+- smile_overview
+- get_insights
+- query_knowledge
 
-The main challenge was connecting design thinking with implementation. Initially, I only focused on UI, but later I added a basic agent to demonstrate system behavior.
+These tools are called within the code to represent how a real system would analyze patterns and generate recommendations.
 
-If I improve this further, I would connect real-time data and make the system interactive.
-I used LPI tools such as smile_overview, get_insights, and query_knowledge in my agent implementation.
+I also implemented multiple layers of error handling, including:
+- validation for negative input values
+- handling missing or zero values
+- checking for out-of-range inputs
+- type validation for input consistency
+
+To ensure transparency, I added a dedicated explainability function. When a recommendation is generated, the system clearly explains the reason behind it based on observed patterns (e.g., low sleep leading to reduced energy levels).
+
+The main challenge was connecting UI design with backend logic. Initially, I focused only on the dashboard, but later I extended the project by adding an agent to demonstrate system behavior and decision-making.
+
+If I continue improving this project, I would integrate real-time data, build an interactive prototype, and enhance the intelligence of recommendations using more advanced models.
