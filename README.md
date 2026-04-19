@@ -72,3 +72,26 @@ https://www.figma.com/design/5taT2q8AHdeYHWxTAPCj3R/Untitled?node-id=0-1&t=ZqvQP
 - Connect real-time data sources
 - Integrate AI-driven predictions
 - Build a functional backend system
+- 
+## Code Implementation
+
+This project includes a simple agent (`agent.py`) that simulates how a digital twin system processes user inputs and generates insights.
+
+The agent:
+- Accepts inputs like sleep, energy, and stress
+- Calls LPI tools such as `smile_overview` and `get_insights`
+- Generates insights based on patterns
+
+## Example Run
+
+Input:
+sleep = 6, energy = 5, stress = 7
+
+Output:
+"Low sleep detected. This may reduce your energy levels."
+
+## Explainability
+
+If a user asks "Why this recommendation?", the system explains:
+
+"This recommendation is based on observed patterns where lower sleep leads to reduced energy and performance."
