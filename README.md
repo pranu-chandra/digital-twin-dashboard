@@ -126,7 +126,7 @@ The agent includes basic error handling:
 ## Design Prototype
 
 Figma Design Link:
-(Add your Figma link here)
+(https://www.figma.com/design/5taT2q8AHdeYHWxTAPCj3R/Untitled?node-id=0-1&t=ZqvQPug9TjDNTwTs-1)
 
 ---
 
