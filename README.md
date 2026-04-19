@@ -155,6 +155,16 @@ These tools are referenced in agent.py and used for generating insights.
 * Connect with backend services
 
 ---
+## Execution Evidence
+
+The agent was executed successfully and connected to the LPI system.
+
+It called the following tools:
+- smile_overview
+- get_insights
+- query_knowledge
+
+Execution logs are provided in `execution-log.txt`.
 
 ## Author
 
